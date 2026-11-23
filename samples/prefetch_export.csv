@@ -1,0 +1,6 @@
+ExecutableName,RunCount,LastRun,PreviousRun0,PreviousRun1,SourceFilename,Host
+CHROME.EXE,48,2026-03-13 21:44:09,2026-03-13 18:20:31,134178877310000000,C:\Windows\Prefetch\CHROME.EXE-5A1F2B3C.pf,WS-FIN-07.lab.example
+WHOAMI.EXE,1,2026-03-14 07:05:41,,,C:\Windows\Prefetch\WHOAMI.EXE-9A8B7C6D.pf,WS-FIN-07.lab.example
+PSEXESVC.EXE,1,2026-03-14 07:12:02,,,C:\Windows\Prefetch\PSEXESVC.EXE-AD70946C.pf,WS-FIN-07.lab.example
+7Z.EXE,1,2026-03-14 07:18:11,,,C:\Windows\Prefetch\7Z.EXE-1C2D3E4F.pf,WS-FIN-07.lab.example
+RCLONE.EXE,2,2026-03-14 07:31:05,2026-03-14 07:22:40,,C:\Windows\Prefetch\RCLONE.EXE-1A2B3C4D.pf,WS-FIN-07.lab.example

